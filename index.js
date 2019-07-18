@@ -46,10 +46,7 @@ const gerarLimiteAleatorio = () => {
     return Math.floor(Math.random() * (max - min) + min)
 };
 
-const calcularLimites = () => {
-    limites = limites.map(() => gerarLimiteAleatorio());
-}
-
+const calcularLimites = () => limites = limites.map(() => gerarLimiteAleatorio());
 
 const iniciar = () => {
     inicializarPixels();
